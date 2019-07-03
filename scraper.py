@@ -23,8 +23,8 @@ conts = page_soup.findAll('div', {'class': 'item-container'})
 for cont in conts:
 	brand = cont.find('div', 'item-info').div.a.img['title']
 
-	name = cont.findAll('a', {'class': 'item-title'})[0].text
+	title = cont.findAll('a', {'class': 'item-title'})[0].text
 
-	f.write(brand + ',' + name.replace(',', ' ') + '\n')
+	f.write(brand + ',' + title.replace(',', ' ') + '\n')
 
 f.close()
