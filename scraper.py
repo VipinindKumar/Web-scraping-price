@@ -10,3 +10,11 @@ client.close()
 
 # parse the page
 page_soup = BeautifulSoup(page_html, 'html.parser')
+
+# grabs each item-container
+conts = page_soup.findAll('div', {'class': 'item-container'})
+
+for cont in conts:
+	brand = cont.div.div.a.img['title']
+
+	name = cont.findAll('a', {'class': 'item-title'})[0].text
