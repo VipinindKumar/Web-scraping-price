@@ -21,7 +21,7 @@ f.write('Brand, Name\n')
 conts = page_soup.findAll('div', {'class': 'item-container'})
 
 for cont in conts:
-	brand = cont.div.div.a.img['title']
+	brand = cont.find('div', 'item-info').div.a.img['title']
 
 	name = cont.findAll('a', {'class': 'item-title'})[0].text
 
