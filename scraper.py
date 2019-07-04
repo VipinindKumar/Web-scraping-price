@@ -12,7 +12,7 @@ client.close()
 page_soup = BeautifulSoup(page_html, 'html.parser')
 
 # create a new file in write mode
-f =  open('laptops.csv', 'w')
+f =  open('data/newegg-laptops.csv', 'w')
 
 # write a header, columns name
 f.write('Brand, Name\n')
