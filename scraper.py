@@ -38,6 +38,7 @@ for cont in conts:
 	# discount on the product
 	dc = d = cont.find('div', 'item-info').find('div','item-action').ul.find('li','price-save').find('span','price-save-percent').text[:-1]
  
-	f.write(brand + ',' + title.replace(',', ' ') + '\n')
+	f.write(brand + ',' + title.replace(',', ' ')
+	+ pw + ',' + pc + ',' + dc + ',' + '\n')
 
 f.close()
