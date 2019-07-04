@@ -35,6 +35,9 @@ for cont in conts:
 	pc = pc.replace(',', '')
 	pc = re.search('.+\s([0-9]+).+', pc).group(1)
 
+	# discount on the product
+	dc = d = cont.find('div', 'item-info').find('div','item-action').ul.find('li','price-save').find('span','price-save-percent').text[:-1]
+ 
 	f.write(brand + ',' + title.replace(',', ' ') + '\n')
 
 f.close()
