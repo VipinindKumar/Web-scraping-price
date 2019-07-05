@@ -16,7 +16,7 @@ page_soup = BeautifulSoup(page_html, 'html.parser')
 f =  open('data/newegg-laptops.csv', 'w')
 
 # write a header, columns name
-f.write('Brand, Name\n')
+f.write('Brand, Name, Price-was, Current-Price, Discount(%)\n')
 
 # grabs each item-container
 conts = page_soup.findAll('div', {'class': 'item-container'})
