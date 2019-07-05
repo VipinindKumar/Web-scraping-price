@@ -40,6 +40,6 @@ for cont in conts:
 	dc = d = cont.find('div', 'item-info').find('div','item-action').ul.find('li','price-save').find('span','price-save-percent').text[:-1]
  
 	f.write(brand + ',' + title.replace(',', ' ')
-	+ pw + ',' + pc + ',' + dc + ',' + '\n')
+	+ ',' + pw + ',' + pc + ',' + dc + ',' + '\n')
 
 f.close()
