@@ -45,8 +45,8 @@ for cont in conts:
 	except:
 		dc = '0'
 	
- 
+	# write the row into csv file
 	f.write(brand + ',' + title.replace(',', ' ')
-	+ ',' + pw + ',' + pc + ',' + dc + ',' + '\n')
+	+ ',' + pw + ',' + pc + ',' + dc + '\n')
 
 f.close()
