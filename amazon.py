@@ -25,7 +25,7 @@ def amazon(page_soup):
 			num_rating = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > div > a').get_text(strip=True)
 		except:
 			rating = 'NaN'
-			num_rating = 0
+			num_rating = '0'
 		
 		# previous price of the product and discount, if available
 		try:
@@ -39,8 +39,8 @@ def amazon(page_soup):
 			dcp = disc.group(2)
 		except:
 			pw = 'NaN'
-			dc = 0
-			dcp = 0
+			dc = '0'
+			dcp = '0'
 		
 		# Current price of the product
 		pc = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > a > span > span').get_text(strip=True)[1:].replace(',', '')

@@ -16,23 +16,22 @@ def newegg(page_soup):
 
 		# getting title/name of the product
 		title = cont.findAll('a', {'class': 'item-title'})[0].text
-
-		# previous price, if available
+		
 		try:
+			# previous price, if available
 			pw = cont.find('div', 'item-info').find('div','item-action').ul.li.span.text
+			
+			# discount on the product, if available
+			dc = d = cont.find('div', 'item-info').find('div','item-action').ul.find('li','price-save').find('span','price-save-percent').text[:-1]
 		except:
 			pw = 'NaN'
+			dc = '0'
 		
 		# current price of the product
 		pc = cont.find('div', 'item-info').find('div','item-action').ul.find('li','price-current').text
 		pc = pc.replace(',', '')
 		pc = re.search('.+\s([0-9]+).+', pc).group(1)
-
-		# discount on the product, if available
-		try:
-			dc = d = cont.find('div', 'item-info').find('div','item-action').ul.find('li','price-save').find('span','price-save-percent').text[:-1]
-		except:
-			dc = '0'
+		
 		
 		# write the row into csv file
 		f.write(brand + ',' + title.replace(',', ' ')
