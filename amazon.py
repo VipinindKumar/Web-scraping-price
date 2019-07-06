@@ -27,10 +27,6 @@ def amazon(page_soup):
 		except:
 			num_rating = 0
 		
-		price = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div').get_text(strip=True)
-		
-		price = re.search('₹(\d+,\d+)(?:\d+,\d+)(\d+,\d+)(?:\d+,\d+).+₹(\d+,\d+)\s\((\d+)%\)', price)
-		
 		pw = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > a > span:nth-of-type(2) > span').get_text(strip=True)[1:].replace(',', '')
 		
 		pc = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > a > span > span').get_text(strip=True)[1:].replace(',', '')
