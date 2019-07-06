@@ -7,17 +7,20 @@ def amazon(page_soup):
 	f = open('data/amazon-laptops.csv', 'w')
 
 	# write a header, columns name
-	f.write('Brand, Name, Price-was, Current-Price, Discount(%)\n')
+	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating, Number-of-ratings\n')
 
 	# grabs each item-container
 	conts = page_soup.findAll('div', {'class': productClass})
 
 	for cont in conts:
-		name = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div > h2 > a').get_text(strip=True)
+		title = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div > h2 > a').get_text(strip=True)
 
-		brand = name.split(' ')[0]
+		brand = title.split(' ')[0]
 		
-		rating = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > div > span').get_text(strip=True)
+		try:
+			rating = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > div > span').get_text(strip=True)
+		except:
+			rating = 'NaN'
 		
 		num_rating = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > div > a').get_text(strip=True)
 		
@@ -31,7 +34,7 @@ def amazon(page_soup):
 		dcp = price.group(4)
 		
 		
-		f.write('')
+		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dc + ',' + dcp + ',' + rating + ',' + num_rating + '\n')
 	f.close()
 
 	print('Scraped Amazon')
