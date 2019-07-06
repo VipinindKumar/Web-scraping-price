@@ -42,8 +42,12 @@ def amazon(page_soup):
 			dc = '0'
 			dcp = '0'
 		
-		# Current price of the product
-		pc = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > a > span > span').get_text(strip=True)[1:].replace(',', '')
+		try:
+			# Current price of the product
+			pc = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > a > span > span').get_text(strip=True)[1:].replace(',', '')
+		except:
+			pc = 'NaN'
+		
 		
 		# write the variables in csv file
 		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dc + ',' + dcp + ',' + rating + ',' + num_rating + '\n')
