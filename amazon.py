@@ -22,16 +22,23 @@ def amazon(page_soup):
 		except:
 			rating = 'NaN'
 		
-		num_rating = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > div > a').get_text(strip=True)
+		try:
+			num_rating = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > div > a').get_text(strip=True)
+		except:
+			num_rating = 0
 		
 		price = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div').get_text(strip=True)
 		
 		price = re.search('₹(\d+,\d+)(?:\d+,\d+)(\d+,\d+)(?:\d+,\d+).+₹(\d+,\d+)\s\((\d+)%\)', price)
 		
-		pw = price.group(2).replace(',', '')
-		pc = price.group(1).replace(',', '')
-		dc = price.group(3).replace(',', '')
-		dcp = price.group(4)
+		pw = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > a > span:nth-of-type(2) > span').get_text(strip=True)[1:].replace(',', '')
+		
+		pc = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > a > span > span').get_text(strip=True)[1:].replace(',', '')
+		
+		disc = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div > div > div > span:nth-of-type(2)').get_text(strip=True)
+		disc = re.search('.*₹(\d+,\d+)\s\((\d+)%\)', disc)
+		dc = disc.group(1).replace(',', '')
+		dcp = disc.group(2)
 		
 		
 		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dc + ',' + dcp + ',' + rating + ',' + num_rating + '\n')
