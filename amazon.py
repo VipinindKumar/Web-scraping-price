@@ -14,12 +14,13 @@ def amazon(page_soup):
 		name = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div > h2 > a').get_text(strip=True)
 
 		brand = name.split(' ')[0]
+		
+		rating = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > div > span').get_text(strip=True)
+		
+		num_rating = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > div > a').get_text(strip=True)
 
-		 
-
-
-
-
+		
+		
 		f.write('')
 	f.close()
 
