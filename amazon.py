@@ -7,7 +7,7 @@ def amazon(page_soup):
 	f = open('data/amazon-laptops.csv', 'w')
 
 	# write a header, columns name
-	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating, Number-of-ratings\n')
+	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings\n')
 
 	# grabs each item-container
 	conts = page_soup.findAll('div', {'class': productClass})
@@ -22,6 +22,8 @@ def amazon(page_soup):
 		# star rating of the product and number of reviews, if available
 		try:
 			rating = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > div > span').get_text(strip=True)
+			rating = rating.split(' ')[0]
+			
 			num_rating = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > div > a').get_text(strip=True)
 		except:
 			rating = 'NaN'
