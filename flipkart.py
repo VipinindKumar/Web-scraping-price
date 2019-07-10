@@ -13,7 +13,10 @@ def flipkart(page_soup):
 	
 	for cont in conts:
 		# get the title of the product
-		title = cont.select_one('div > div > div > a > div:nth-of-type(3) > div > div').get_text(strip=True)
+		try:
+			title = cont.select_one('div > div > div > a > div:nth-of-type(3) > div > div').get_text(strip=True)
+		except:
+			title = cont.select_one('div > div > div > a > div:nth-of-type(2) > div > div').get_text(strip=True)
 		
 		# retrieve the brand name of the product
 		brand = title.split(' ')[0]
@@ -57,7 +60,7 @@ def flipkart(page_soup):
 		 	ram = cont.select_one('div > div > div > a > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(3) > ul > li:nth-of-type(2)').get_text()
 		 	ram = ram.split(' ')[0]
 		 	
-		 except:
+		except:
 		 	ram = 'NaN'
 		
 		# Storage
@@ -65,11 +68,11 @@ def flipkart(page_soup):
 		 	hdd = cont.select_one('div > div > div > a > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(3) > ul > li:nth-of-type(4)').get_text()
 		 	hdd = hdd.split(' ')[0]
 		 	
-		 except:
+		except:
 		 	hdd = 'NaN'
 
 		# write the variables in csv file
-		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + ',' + hdd + '\n')
+		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + ',' + hdd + '\n')
 	f.close()
 
-	print('Scraped Amazon')
+	print('Scraped Flipkart')
