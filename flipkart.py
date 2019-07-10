@@ -5,7 +5,7 @@ def flipkart(page_soup):
 	f = open('data/amazon-laptops.csv', 'w')
 
 	# write a header, columns name
-	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings, RAM(GB)\n')
+	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings, RAM(GB), Storage(GB/TB)\n')
 
 	# grabs each item-container
 	conts = page_soup.findAll('div', {'class': 'bhgxx2 col-12-12'})
@@ -60,8 +60,16 @@ def flipkart(page_soup):
 		 except:
 		 	ram = 'NaN'
 		
+		# Storage
+		try:
+		 	hdd = cont.select_one('div > div > div > a > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(3) > ul > li:nth-of-type(4)').get_text()
+		 	hdd = hdd.split(' ')[0]
+		 	
+		 except:
+		 	hdd = 'NaN'
+
 		# write the variables in csv file
-		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + '\n')
+		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + ',' + hdd + '\n')
 	f.close()
 
 	print('Scraped Amazon')
