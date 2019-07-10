@@ -6,11 +6,12 @@ def flipkart(page_soup):
 	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings\n')
 
 	# grabs each item-container
-	conts = page_soup.findAll('div', {'class': productClass})
-
+	conts = page_soup.findAll('div', {'class': 'bhgxx2 col-12-12'})
+	conts = conts[2:-2]
+	
 	for cont in conts:
 		# get the title of the product
-		title = 
+		title = cont.select_one('div > div > div > a > div:nth-of-type(3) > div > div').get_text(strip=True)
 		
 		# retrieve the brand name of the product
 		brand = title.split(' ')[0]
