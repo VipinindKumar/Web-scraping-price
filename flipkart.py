@@ -2,7 +2,7 @@ import re
 
 def flipkart(page_soup):
 	# create a new file in write mode
-	f = open('data/amazon-laptops.csv', 'w')
+	f = open('data/flipkart-laptops.csv', 'w')
 
 	# write a header, columns name
 	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings, RAM(GB), Storage(GB/TB)\n')
