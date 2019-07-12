@@ -16,9 +16,9 @@ def newegg(page_soup):
 		brand = cont.find('div', 'item-info').div.a.img['title']
 		
 		# to filter products pop up shown in recently viewed items at the end of the page
-		print(brand)
-		if not brand:
-			continue
+		# print(brand)
+		# if not brand:
+		# 	continue
 
 		# getting title/name of the product
 		title = cont.findAll('a', {'class': 'item-title'})[0].text
