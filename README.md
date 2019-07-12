@@ -12,5 +12,5 @@
 * fix when no discount, current price is differently formed
 * Use title to extract their specs
 * Sorting the data accordingly to select best option available
-* Write script for Flipkart
+* ~Write script for Flipkart~
 * Find other good sites available to buy new/old laptops
