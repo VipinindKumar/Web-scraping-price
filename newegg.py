@@ -10,8 +10,7 @@ def newegg(page_soup):
 	# grabs each item-container
 	conts = page_soup.findAll('div', {'class': 'item-container'})
 
-	for i,cont in enumerate(conts):
-		print(i)
+	for cont in conts:
 		# getting brand name from the title of img tag
 		brand = cont.find('div', 'item-info').div.a.img['title']
 		
