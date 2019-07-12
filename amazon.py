@@ -19,7 +19,7 @@ def amazon(page_soup):
 		# process title to extract ram, storage
 		features = title.replace(' ', '').replace('-', '/')
 		
-		features = re.search('.+(\d|\d{2})GB.*/(\d|\d{2}|\d{3})(?:GB|TB).*', features)
+		features = re.search('.+(\d+)GB.*/(\d+)(?:G|T).*', features)
 		
 		ram = features.group(1)
 		hdd = features.group(2)

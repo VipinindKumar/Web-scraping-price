@@ -17,6 +17,9 @@ def newegg(page_soup):
 		# getting title/name of the product
 		title = cont.findAll('a', {'class': 'item-title'})[0].text
 		
+		# process title to extract ram, storage
+		features = title.replace(' ', '')
+		
 		try:
 			# previous price, if available
 			pw = cont.find('div', 'item-info').find('div','item-action').ul.li.span.text
