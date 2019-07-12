@@ -7,7 +7,7 @@ def amazon(page_soup):
 	f = open('data/amazon-laptops.csv', 'w')
 
 	# write a header, columns name
-	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings\n')
+	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings, RAM(GB), Storage(GB/TB)\n')
 
 	# grabs each item-container
 	conts = page_soup.findAll('div', {'class': productClass})
@@ -15,6 +15,15 @@ def amazon(page_soup):
 	for cont in conts:
 		# get the title of the product
 		title = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div > h2 > a').get_text(strip=True)
+		
+		# process title to extract ram, storage
+		features = title.replace(' ', '').rplace('-', '/')
+		
+		features = re.search('.+(\d|\d{2})GB.*/(\d|\d{2}|\d{3})(?:GB|TB).*', features)
+		
+		ram = features.group(1)
+		storage = features.group(2)
+		
 		
 		# retrieve the brand name of the product
 		brand = title.split(' ')[0]
@@ -52,7 +61,7 @@ def amazon(page_soup):
 		
 		
 		# write the variables in csv file
-		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dc + ',' + dcp + ',' + rating + ',' + num_rating + '\n')
+		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + ',' + hdd + '\n')
 	f.close()
 
 	print('Scraped Amazon')
