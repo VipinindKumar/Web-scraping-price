@@ -17,12 +17,12 @@ def amazon(page_soup):
 		title = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div > h2 > a').get_text(strip=True)
 		
 		# process title to extract ram, storage
-		features = title.replace(' ', '').rplace('-', '/')
+		features = title.replace(' ', '').replace('-', '/')
 		
 		features = re.search('.+(\d|\d{2})GB.*/(\d|\d{2}|\d{3})(?:GB|TB).*', features)
 		
 		ram = features.group(1)
-		storage = features.group(2)
+		hdd = features.group(2)
 		
 		
 		# retrieve the brand name of the product

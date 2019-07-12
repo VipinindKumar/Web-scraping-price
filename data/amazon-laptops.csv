@@ -1,25 +1,25 @@
-Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings
-iBall,iBall Excelance OHD IPS Screen with 11.6-inch FHD Display Laptop (8th Gen Intel Atom X5-Z8350/2GB DDR3/32GB/Windows 10/Integrated Graphics) Chocolate Brown,12999,10325,2674,21,3.5,82
-iBall,iBall Marvel 6 V 2.0 2017 14-inch Laptop (Intel Celeron Processor N3350/3GB/32GB/Windows 10 Home/Integrated Graphics)  Metallic Grey,15999,10990,5009,31,3.5,29
-Acer,Acer Aspire A315-53 15.6-inch Laptop (Intel Celeron Processor 3867U/4GB/500GB/Windows 10 Home/Integrated Graphics)  Obsidian Black,24999,17990,7009,28,3.7,88
-iBall,iBall M500 14-inch Laptop (Intel Celeron N3350/4GB/32GB/Windows 10/Integrated Graphics)  Cobalt Blue,16999,12990,4009,24,3.3,183
-iBall,iBall i360 FHD 2018 11.6-inch Laptop (Intel Atom Processor x5-Z8350/2GB/32GB/Windows 10 Home/Integrated Graphics)  Star Grey,15999,11500,4499,28,3.4,26
-ASUS,ASUS VivoBooK Intel Celeron N4000 15.6-inch Laptop (4GB/500GB HDD/Windows 10/Chocolate Black/2 Kg)  X540MA-GQ024T,25990,19990,6000,23,3.3,164
-iBall,iBall Netizen 2019 14-inch Laptop with 4G SIM Slot (Intel Celeron Processor N3350/4GB/64GB/Windows 10 Home/Integrated Graphics)  Metallic Grey,24999,14990,10009,40,3.8,10
-iBall,iBall Merit G9 11.6-Inch Laptop (Intel Celeron 2GB/32GB/Windows 10) Light Weight-Cobalt Blue,13999,8990,5009,36,3.3,39
-Lenovo,Lenovo Ideapad 330 Intel Pentium N5000 15.6 inch FHD Laptop (4GB RAM / 1 TB HDD/ DOS/ Onyx Black/ 2.2 kg)  81D100HXIN,27490,19990,7500,27,3.6,50
-Lenovo,Lenovo Ideapad 330 AMD A6 Processor 15.6-inch Laptop (4GB/1TB HDD/DOS/Onyx Black/with DVD-RW/2.2kg)  81D6007JIN,27490,17990,9500,35,2.7,41
-iBall,iBall Premio V 3 2018 14-inch Laptop (Intel Pentium Processor N4200/4GB/32GB/Windows 10 Home/Integrated Graphics) Metallic Gun Mustard,19999,13490,6509,33,3.6,13
-HP,HP Business Notebook 245 G6 AMD A6-9225/4GB DDR3/1TB/DOS,23990,19480,4510,19,3.8,277
-Acer,Acer Aspire 3 UN.GNVSI.009 15.6-inch Laptop (AMD Dual-Core Processor A4-9125/4GB/1TB/Windows 10 Home/Integrated Graphics)  Obsidian Black,34999,19440,15559,44,3.4,110
-Acer,Acer One AO-Z422 14-inch Laptop (A4-3350B/4GB/1TB/Linux/Integrated Graphics)  Black,30000,17990,12010,40,3.5,6
-Lenovo,Lenovo Ideapad 330 AMD A6 14-inch Laptop (4GB/500GB HDD/Windows 10 Home/Platinum Grey/ 2.2kg)  81D5003HIN,32890,19990,12900,39,3.1,31
-Acer,Acer Aspire 3 (Pentium 4417U/ 4 GB DDR4 RAM / 500 GB HDD / 39.62 cm (15.6 inch) HD Screen / Windows 10) A315-53 (NX.H38SI.010) (Black  2.1 kg),29999,19999,10000,33,4.6,3
-Acer,Acer Aspire 3 A315-53 15.6-inch Laptop (Intel Celeron Processor 3867U/4GB/500GB HDD/Windows 10 Home 64 bit/Intel HD 610 Graphics)  Obsidian Black,24999,17990,7009,28,NaN,0
-RDP,RDP ThinBook 1130-EC1 11.6-inch Laptop (Intel Quad Core x5-Z8350 Processor/2GB/32GB HDD/Windows 10/Intel HD Graphics 400)  Black,13500,11290,2210,16,3.4,114
-Micromax,Micromax Lapbook Atom 11.6-inch Laptop (2GB/32GB/Windows 10/Silver/1.3kg)  L1161,14999,12990,2009,13,3.3,259
-(Renewed),(Renewed) Lenovo Thinkpad L430 14-inch Laptop (2nd Gen Core i5 2520M/4GB/320GB/Windows 10/Integrated Graphics)  Black,NaN,NaN,0,0,3.4,8
-Lenovo,Lenovo V145-81MT001BIH AMD A4 9125@2.3 Ghz / 4GB RAM / 1TB HDD/ 15.6" AntiGlare Screen/ with ODD / DOS,20499,18890,1609,8,5.0,1
-iBall,iBall CompBook Excelance-OHD Intel Atom Processor X5 (2 GB/32 GB/Win 10) Z8350 Laptop  (29.46cm  Chocolate Brown),12999,10947,2052,16,3.1,108
-Acer,Acer One 14 Z422 Laptop (AMD A6 -7310 CPU/4 GB RAM/1 TB HDD/14" Screen/Black),19089,17887,1202,6,3.4,3
-(Renewed),(Renewed) Dell Latitude E6420-i5-4 GB-120 GB 14-inch Laptop (2nd Gen Core i5/4GB//Windows 7/Integrated Graphics)  Greyish Silver,89000,17990,71010,80,NaN,0
+Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings, RAM(GB), Storage(GB/TB)
+iBall,iBall Excelance OHD IPS Screen with 11.6-inch FHD Display Laptop (8th Gen Intel Atom X5-Z8350/2GB DDR3/32GB/Windows 10/Integrated Graphics) Chocolate Brown,12999,10940,2059,16,3.6,83,2,32
+iBall,iBall M500 14-inch Laptop (Intel Celeron N3350/4GB/32GB/Windows 10/Integrated Graphics)  Cobalt Blue,16999,12990,4009,24,3.3,186,4,32
+iBall,iBall Marvel 6 V 2.0 2017 14-inch Laptop (Intel Celeron Processor N3350/3GB/32GB/Windows 10 Home/Integrated Graphics)  Metallic Grey,15999,11699,4300,27,3.4,31,3,32
+Acer,Acer Aspire A315-53 15.6-inch Laptop (Intel Celeron Processor 3867U/4GB/500GB/Windows 10 Home/Integrated Graphics)  Obsidian Black,24999,17990,7009,28,3.7,89,4,500
+iBall,iBall Merit G9 11.6-Inch Laptop (Intel Celeron 2GB/32GB/Windows 10) Light Weight-Cobalt Blue,13999,9990,4009,29,3.3,40,2,32
+ASUS,ASUS VivoBooK Intel Celeron N4000 15.6-inch Laptop (4GB/500GB HDD/Windows 10/Chocolate Black/2 Kg)  X540MA-GQ024T,25990,19990,6000,23,3.3,165,4,500
+iBall,iBall i360 FHD 2018 11.6-inch Laptop (Intel Atom Processor x5-Z8350/2GB/32GB/Windows 10 Home/Integrated Graphics)  Star Grey,15499,10490,5009,32,3.4,26,2,32
+iBall,iBall Netizen 2019 14-inch Laptop with 4G SIM Slot (Intel Celeron Processor N3350/4GB/64GB/Windows 10 Home/Integrated Graphics)  Metallic Grey,24999,14990,10009,40,3.8,10,4,64
+iBall,iBall Premio V 3 2018 14-inch Laptop (Intel Pentium Processor N4200/4GB/32GB/Windows 10 Home/Integrated Graphics) Metallic Gun Mustard,19999,13490,6509,33,3.6,13,4,32
+Acer,Acer Aspire 3 UN.GNVSI.009 15.6-inch Laptop (AMD Dual-Core Processor A4-9125/4GB/1TB/Windows 10 Home/Integrated Graphics)  Obsidian Black,28990,19440,9550,33,3.4,110,4,1
+Acer,Acer Aspire 3 A315-53 15.6-inch Laptop (Intel Celeron Processor 3867U/4GB/500GB HDD/Windows 10 Home 64 bit/Intel HD 610 Graphics)  Obsidian Black,24999,17990,7009,28,NaN,0,4,500
+Lenovo,Lenovo Ideapad 330 AMD A6 Processor 15.6-inch Laptop (4GB/1TB HDD/DOS/Onyx Black/with DVD-RW/2.2kg)  81D6007JIN,31590,17990,13600,43,2.7,41,4,1
+Lenovo,Lenovo Ideapad 330 Intel Pentium N5000 15.6 inch FHD Laptop (4GB RAM / 1 TB HDD/ DOS/ Onyx Black/ 2.2 kg)  81D100HXIN,NaN,NaN,0,0,3.6,50,4,1
+RDP,RDP ThinBook 1130-EC1 11.6-inch Laptop (Intel Quad Core x5-Z8350 Processor/2GB/32GB HDD/Windows 10/Intel HD Graphics 400)  Black,13500,11599,1901,14,3.3,115,2,32
+Lenovo,Lenovo Ideapad 330 AMD A6 14-inch Laptop (4GB/500GB HDD/Windows 10 Home/Platinum Grey/ 2.2kg)  81D5003HIN,32890,19990,12900,39,3.1,31,4,500
+Lenovo,Lenovo Ideapad 330 7th Gen AMD E2-9000 14 inch FHD Laptop (4GB RAM/ 500 GB HDD/ Windows 10/ Platinum Grey / 2.1 Kg)  81D5003LIN,45490,18990,26500,58,NaN,0,4,500
+HP,HP Business Notebook 245 G6 AMD A6-9225/4GB DDR3/1TB/DOS,22825,19480,3345,15,3.7,278,4,1
+Acer,Acer Aspire 3 (Pentium 4417U/ 4 GB DDR4 RAM / 500 GB HDD / 39.62 cm (15.6 inch) HD Screen / Windows 10) A315-53 (NX.H38SI.010) (Black  2.1 kg),29999,19999,10000,33,4.6,3,4,500
+Lenovo,Lenovo V145-81MT001BIH AMD A4 9125@2.3 Ghz / 4GB RAM / 1TB HDD/ 15.6" AntiGlare Screen/ with ODD / DOS,21990,18850,3140,14,5.0,1,4,1
+Acer,Acer One 14 Z422 Laptop (AMD A6 -7310 CPU/4 GB RAM/1 TB HDD/14" Screen/Black),19089,17887,1202,6,3.4,3,4,1
+Micromax,Micromax Lapbook Atom 11.6-inch Laptop (2GB/32GB/Windows 10/Silver/1.3kg)  L1161,14999,12490,2509,17,3.3,259,2,32
+Acer,Acer One AO-Z422 14-inch Laptop (A4-3350B/4GB/1TB/Linux/Integrated Graphics)  Black,30000,17990,12010,40,3.5,6,4,1
+(Renewed),(Renewed) Dell Latitude E6420-i5-4 GB-500 GB 14-inch Laptop (2nd Gen Core i5/4GB/500GB/Windows 7/Integrated Graphics)  Greyish Silver,89000,17990,71010,80,2.4,3,4,500
+Lenovo,Lenovo Ideapad 330 7th Gen AMD E2-9000 14 inch FHD Laptop (4GB RAM/ 500 GB HDD/ Windows 10/ Midnight Blue / 2.1 Kg)  81D5003KIN,45490,18990,26500,58,NaN,0,4,500
