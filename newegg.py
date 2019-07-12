@@ -16,7 +16,8 @@ def newegg(page_soup):
 		brand = cont.find('div', 'item-info').div.a.img['title']
 		
 		# to filter products pop up shown in recently viewed items at the end of the page
-		if brand is None:
+		print(brand)
+		if not brand:
 			continue
 
 		# getting title/name of the product
@@ -26,9 +27,15 @@ def newegg(page_soup):
 		features = title.replace(' ', '')
 		features = re.search('.*(?:\)|\w|-)(\d+)GB.*(?:y|\+|-|M)(\d+)', features)
 		
-		ram = features.group(1)
-		hdd = features.group(2)
+		# some products doesn't contain this inforamtion
+		try:
+			ram = features.group(1)
+			hdd = features.group(2)
+		except:
+			ram = 'NaN'
+			hdd = 'NaN'
 		
+		# PRICE
 		try:
 			# previous price, if available
 			pw = cont.find('div', 'item-info').find('div','item-action').ul.li.span.text
