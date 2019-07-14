@@ -46,9 +46,12 @@ def newegg(page_soup):
 			dc = '0'
 		
 		# current price of the product
-		pc = cont.find('div', 'item-info').find('div','item-action').ul.find('li','price-current').text
-		pc = pc.replace(',', '')
-		pc = re.search('.+\s([0-9]+).+', pc).group(1)
+		try:
+			pc = cont.find('div', 'item-info').find('div','item-action').ul.find('li','price-current').text
+			pc = pc.replace(',', '')
+			pc = re.search('.+\s([0-9]+).+', pc).group(1)
+		except:
+			pc = 'NaN'
 		
 		
 		# write the row into csv file
