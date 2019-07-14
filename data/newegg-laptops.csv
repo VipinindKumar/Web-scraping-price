@@ -1,30 +1,37 @@
 Brand, Name, Price-was, Current-Price, Discount(%), RAM(GB), Storage(GB/TB)
-HP,HP Envy 17t Premium 17.3 inch UHD 4K Laptop PC (Intel 8th Gen Quad Core Processor  16GB RAM  1TB HDD  17.3" 4K UHD (3840x2160) Display  NVIDIA GeForce MX150 4GB  DVD  Win 10 Home),121052,93049,23,NaN,NaN
-Lenovo,Lenovo ThinkPad P1 Black Laptop (8th Generation Intel Core i7-8850H Processor  16GB DDR4 RAM  512GB PCIe SSD  15.6" Touch 4K UHD (3840 x 2160)  Nvidia Quadro P1000 Graphics  Windows 10 Pro,196055,150812,23,NaN,NaN
-AORUS,AORUS 5 NA-7US1121SH i7-9750H NVIDIA GeForce GTX 1650 4 GB GDDR5 16 GB Memory 256 GB Intel SSD 1 TB HDD Win10 15.6" LG FHD 144 Hz Gaming Laptop,NaN,98218,0,6,256
-ASUS,ASUS VivoBook S15 S532 Thin & Light Laptop  15.6" FHD  Intel Core i5-8265U CPU  8 GB DDR4 RAM  PCIe NVMe 512 GB SSD  Windows 10 Home  S532FA-DB55  Transparent Silver,NaN,56087,0,NaN,NaN
-DELL,Dell Inspiron 15 Full HD Touchscreen Premium Home and Business Laptop (AMD Ryzen 5 2500U Quad-Core  8GB RAM  1TB HDD  15.6" Full HD 1920x1080 Touch  AMD Radeon Vega 8  Win 10 Home),44834,34420,23,NaN,NaN
-Lenovo,Lenovo Laptop ThinkPad L470 20JUS09U00 Intel Core i5 6th Gen 6300U (2.40 GHz) 8 GB Memory 256 GB SSD Intel HD Graphics 520 14.0" Windows 10 Pro 64-bit,78676,43247,45,8,256
-Apple,Apple Laptop MacBook MNYG2LL/A Intel Core i5 1.30 GHz 8 GB Memory 512 GB PCIe SSD Intel HD Graphics 615 12.0" Mac OS X v10.12 Sierra,112995,98871,12,8,512
-ASUS,ASUS VivoBook S15 15.6" Whiskey Lake Intel Core i5-8265U Processor  8 GB DDR4  256 GB SSD  Windows 10 - S530FA-DB51-YL  Silver Blue with Yellow Trim Slim and Portable Full HD NanoEdge Bezel   Laptop ,NaN,50247,0,NaN,NaN
-DELL,Dell XPS 13 9370 Ultrabook: Core i7-8550U  256GB SSD  8GB RAM  13.3" UHD Touch Display,NaN,81284,0,NaN,NaN
-Lenovo,Lenovo Yoga 730 2-in-1 15.6" FHD IPS Touch-Screen Laptop (Intel 8th Gen i7-8550U 4-Core  8GB RAM  256GB M.2 PCIe SSD  15.6" Flat Touch FHD (1920x1080) Display  UHD Graphics 620  Win 10 Home),80152,61656,23,NaN,NaN
-ASUS,ASUSPRO P2540UB-XB51 15.6" 8 GB RAM 256 GB SSD Laptop with up to 9 Hours of Battery Life  Intel Core i5-8250U Processor  TPM and Fingerprint Security  NVIDIA GeForce MX110  and Windows 10 Pro.,59756,53921,10,6,8250
-HP,HP ProBook 450 G5 High Performance Home and Business Laptop (Intel 8th Gen i5-8250U 4-Core  8GB RAM  120GB Sata SSD  15.6" HD (1366 x 768)  WiFi  WebCam  Win 10 Home),60752,48601,20,NaN,NaN
-ASUS,ASUS ZenBook Pro 15 UX550GE-XB71T Premium Laptop PC (Intel 8th Gen Coffee Lake i7-8750H 6-core  16GB RAM  1TB PCIe NVMe SSD  15.6" UHD 4K 3840 x 2160 Touch NanoEdge Bezels  GTX 1050 Ti  Win 10 Pro),197270,155196,21,NaN,NaN
-HP,HP Laptop ENVY 13-AH0002CA Intel Core i5 8250U (1.60 GHz) 8 GB Memory 256 GB SSD Intel UHD Graphics 620 13.3" Touchscreen Windows 10 Home,NaN,68522,0,8,256
-Acer America,Acer Aspire E 15 Laptop  15.6 inch Full HD  1920x1080 Resolution  8th Gen Intel Core i7-8550U  NVIDIA GeForce MX150 2GB  8GB RAM  256GB SSD  E5-576G-81GD,NaN,58467,0,6,81
-DELL,Alienware AW15R4-7675SLV 15.6" FHD IPS GTX 1060 6 GB VRAM  i7-8750H 16 GB Memory 1 TB SSHD + 8 GB SSD Windows 10 Home Gaming Laptop,NaN,113530,0,6,8
-DELL,DELL Laptop XPS 15-9570 XPS9570-7061SLV Intel Core i7 8th Gen 8750H (2.20 GHz) 16 GB Memory 512 GB M.2 PCIe SSD NVIDIA GeForce GTX 1050 Ti 15.6" 4K/UHD Touchscreen Windows 10 Home 64-Bit,162200,135173,17,6,512
-ASUS,ASUS VivoBook S510UA-DS71 Ultra Thin and Portable Laptop  Intel Core i7-8550U Processor  8 GB DDR4 RAM  128 GB SSD + 1 TB HDD  15.6" FHD WideView Display  ASUS NanoEdge Bezel  Metal Cover  S510UA-DS71,NaN,58464,0,8,1
-Acer America,Acer Laptop TravelMate P6 TMP658-M-70S3 Intel Core i7 6th Gen 6500U (2.50 GHz) 8 GB Memory 256 GB SSD Intel HD Graphics 520 15.6" Windows 7 Professional 64-bit (Included Windows 10 Pro License),50988,42473,17,8,256
-Lenovo,Lenovo Laptop ThinkPad T480 (20L5004HUS) Intel Core i5 8th Gen 8250U (1.60 GHz) 8 GB Memory 500 GB HDD Intel UHD Graphics 620 14.0" Windows 10 Pro 64-Bit,NaN,57980,0,8,500
-Lenovo,Lenovo ThinkPad X1 Extreme Premium Laptop (Intel 8th Gen i7-8850H  32GB RAM  512GB PCIe SSD  15.6" UHD 4K (3840x2160) Touch  Fingerprint  dTPM  Win 10 Pro) with MichaelElectronics2 Premium Backpack,232724,168922,27,NaN,NaN
-MSI,MSI Laptop PS Series PS42 8M-097CA Modern Intel Core i7 8th Gen 8550U (1.80 GHz) 16 GB Memory 256 GB SSD Intel UHD Graphics 620 14" FHD IPS Windows 10 Home 64-bit,NaN,76737,0,6,256
-DELL,Dell Inspiron 17 Premium School and Business Laptop (Intel 8th Gen i7-8550U Quad-Core  16GB RAM  2TB HDD  17.3" Full HD (1920 x 1080)  AMD Radeon 4GB  DVD  Win 10 Pro),89668,68908,23,NaN,NaN
-ASUS,ASUS ZenBook 13 Ultra Slim Laptop (8th Generation Intel Core i7-8550U  8GB RAM  512GB Sata SSD  13.3" Flat FHD (1920 x 1080) Display  Intel UHD Graphics 620  Fingerprint Reader  Windows 10 Home,102441,78801,23,NaN,NaN
-DELL,Dell Latitude 3000 3590 15.6" LCD Notebook - Intel Core i5 (8th Gen) i5-8250U Quad-core (4 Core) 1.60 GHz - 8 GB DDR4 SDRAM - 256 GB SSD - Windows 10 Pro 64-bit (English/French/Spanish) - 1920 x 1080,60419,51504,15,6,1920
-ASUS,ASUS ZenBook Pro 15 UX550GE-XB71T Premium Laptop PC (Intel 8th Gen Coffee Lake i7-8750H 6-core  16GB RAM  2TB PCIe NVMe SSD  15.6" UHD 4K 3840 x 2160 Touch NanoEdge Bezels  GTX 1050 Ti  Win 10 Pro),233137,182786,22,NaN,NaN
-HP,HP Spectre x360 - 13t Home and Entertainment Laptop (Intel Core i7-8565U  16GB RAM  512GB SSD  13.3" Touch  4K UHD (3840x2160)  Intel UHD 620  Fingerprint  Wifi  Bluetooth  Webcam  Win 10 Home),133241,102494,23,NaN,NaN
-DELL,Dell Inspiron 17 7786 Home and Business Laptop-2-in-1 (Intel i7-8565U 4-Core  16GB RAM  1TB HDD  17.3" Touch  Full HD (1920x1080)  NVIDIA GeForce MX150  Fingerprint  Wifi  Bluetooth  Win 10 Home),80400,68726,15,NaN,NaN
-Lenovo,Lenovo IdeaPad Premium Home and Business Laptop (Intel 8th Gen i5-8250U Quad Core  4GB RAM  1TB HDD + 16GB Intel Optane  15.6" HD 1366x768  Wifi  Bluetooth  Win 10 Home) Blue,40350,30971,23,NaN,NaN
+Lenovo,Lenovo Ideapad 330s Home and Business Laptop (Intel i7-8550U 4-Core  4GB RAM  256GB  PCIe SSD + 1TB  HDD  15.6" HD (1366x768)  Intel UHD 620  Wifi  Bluetooth  Webcam  2xUSB 3.0  1xHDMI  Win 10 Home),76573,58903,23,6,1
+MSI,MSI GL63 8RE-673 Laptop (8th Gen Intel Core i7-8750H 6-Core Processor  16GB DDR4 RAM  256GB PCIe SSD  15.6" FHD (1920x1080) Display  NVIDIA GeForce GTX 1060  Windows 10 Home),99122,76247,23,NaN,NaN
+ASUS,ASUS ZenBook 13 Ultra Slim Laptop (8th Generation Intel Core i7-8550U  8GB RAM  256GB PCIe SSD  13.3" Flat FHD (1920 x 1080) Display  Intel UHD Graphics 620  Fingerprint Reader  Windows 10 Home,99122,76247,23,NaN,NaN
+HP,HP Spectre x360 - 13t Home and Business Laptop (Intel Core i7-8565U  16GB RAM  1TB  PCIe SSD  13.3" Touch  4K UHD (3840x2160)  Intel UHD 620  Fingerprint  Wifi  Bluetooth  Webcam  Win 10 Pro),181870,139900,23,NaN,NaN
+Acer America,Acer Laptop Aspire A315-41-R1G4 AMD Ryzen 5 3500U (2.10 GHz) 8 GB Memory 128 GB SSD AMD Radeon Vega 8 15.6" Windows 10 Home 64-bit,NaN,43579,0,8,128
+DELL,Dell Inspiron 15 High Performane Home and Business Laptop (Intel Pentium N5000 Processor  16GB RAM  120GB SSD  15.6 HD (1366 x 768) Widescreen LED  WiFi  Bluetooth  Win 10 Home),49713,41648,16,NaN,NaN
+HP,HP X360 15t Premium Convertile 2-in-1 Home and Business Laptop (Intel i5  8GB RAM  128GB Sata SSD  15.6" FHD 1920x1080 Touchscreen  AMD Radeon 530  WiFi  Bluetooth  Stylus Pen  Win 10 Home),51042,39248,23,NaN,NaN
+Lenovo,Lenovo Laptop ThinkPad E585 (20KV000XUS) AMD Ryzen 3 2200U (2.50 GHz) 4 GB Memory 500 GB HDD AMD Radeon Vega 3 15.6" Windows 10 Pro 64-Bit,37592,35176,6,4,500
+ASUS,ASUS PRO P5440UF-XB74 Business Laptop (8th Gen Intel Core i7-8550U  40GB RAM  4TB 2.5 Sata SSD  14" Flat FHD (1920 x 1080) Display  NVIDIA GeForce MX130 Graphics  Windows 10 Pro),229902,176847,23,NaN,NaN
+HP,HP Spectre Folio 13t Premium Convertible 2-in-1 Laptop (Intel i7-8500Y  16GB RAM  512GB PCIe SSD  13.3" FHD IPS 1920x1080 Touch Display  HP Pen  Win 10 Pro) Cognac Brown with HP Z5000 Wireless Mouse,160453,123425,23,NaN,NaN
+DELL,DELL Inspiron 15 Convertible 2-in-1 Premium Home and Business Laptop/Tablet (Intel 8th Gen i7-8550U  Intel Graphics 620  16GB RAM  512GB Sata SSD  15.6" FHD(1920x1080) Touch  Win 10 Home),89015,68406,23,NaN,NaN
+HP,HP 15.6 inch High Performance HD Laptop (Intel i7 Kaby Lake Processor  8GB RAM  1TB HDD  15.6 Inch HD (1366x768) Display  DVD  Wifi  Bluetooth  Win 10),58284,44766,23,NaN,NaN
+ASUS,ASUS Bilingual Laptop K540UB-Q52SP-CB Intel Core i5 8th Gen 8250U (1.60 GHz) 8 GB Memory 1 TB HDD 128 GB SSD NVIDIA GeForce MX110 15.6" Windows 10 Pro 64-Bit,NaN,60787,0,8,1
+HP,HP OMEN 15t Gaming and Business Laptop (Intel Core i7-8750H  8GB RAM  1TB  SATA SSD + 2TB  HDD   15.6" 4K UHD (3840x2160)  NVIDIA RTX 2070  Wifi  Bluetooth  Webcam  3xUSB 3.1  1xHDMI  Win 10 Home),177321,136401,23,NaN,NaN
+MSI,MSI GS75 Stealth GS75202 Gaming and Business Laptop (i7-8750H 6-Core  16GB RAM  256GB SSD  17.3" Full HD (1920x1080)  NVIDIA RTX 2080 (Max-Q)  Wifi  Bluetooth  Webcam  3xUSB 3.1  1xHDMI  Win 10 Pro),255524,196557,23,NaN,NaN
+Lenovo,Lenovo 14e Chromebook 81MH0006US 14" LCD Chromebook - AMD A-Series A4-9120 Dual-core (2 Core) 1.60 GHz - 4 GB LPDDR4X - 32 GB Flash Memory - Chrome OS - 1920 x 1080 - Twisted nematic (TN),NaN,19182,0,2,1920
+DELL,Dell Inspiron 15 5575 Home and Business Laptop (AMD Ryzen 5 2500U 4-Core  4GB RAM  1TB HDD  15.6" Full HD (1920x1080)  AMD Vega 8  Wifi  Bluetooth  Webcam  2xUSB 3.1  1xHDMI  SD Card  Win 10 Home),40494,31149,23,NaN,NaN
+HP,HP Probook 440 G5 Premium 14 inch Business Laptop PC (8th Gen Intel i7 Quad Core Processor  16GB RAM  256GB SSD  14" Full HD (1920x1080) Display  WiFi  USB-C  Win 10 Pro),89668,68908,23,NaN,NaN
+Lenovo,Lenovo 14w 81MQ000JUS 14" LCD Notebook - AMD A-Series A6-9220C Dual-core (2 Core) 2.40 GHz - 4 GB LPDDR4X - 64 GB Flash Memory - Windows 10 Pro 64-bit (English) - 1920 x 1080 - Twisted nematic (TN),27021,22502,17,4,1920
+HP,HP Spectre x360 - 13t Home and Entertainment Laptop (Intel Core i7-8565U  16GB RAM  2TB  PCIe SSD  13.3" Touch  4K UHD (3840x2160)  Intel UHD 620  Fingerprint  Wifi  Bluetooth  Webcam  Win 10 Home),186419,143399,23,NaN,NaN
+HP,HP Spectre x360 13t Convertible 2-in-1 Laptop in Pale Rose Gold (Intel 8th Gen i7-8550U  16GB RAM  512GB PCIe SSD  13.3" FHD 1920x1080 Touchscreen  Win 10 Pro) Two Year Warranty and Accidential Damage,153661,121608,21,NaN,NaN
+HP,HP Spectre x360 13t Premium Ultra Light Convertible 2-in-1 Laptop/Tablet (Intel 8th gen Quad Core Processor  16GB RAM  256GB SSD  13.3" UHD (3840x2160) Touch  Active Stylus Pen  Win 10 Pro) Rose Gold,143469,110293,23,NaN,NaN
+HP,HP Spectre x360 - 13t Home and Business Laptop (Intel Core i7-8565U  16GB RAM  2TB  PCIe SSD  13.3" Touch  4K UHD (3840x2160)  Intel UHD 620  Fingerprint  Wifi  Bluetooth  Webcam  Win 10 Pro),200066,153897,23,NaN,NaN
+ASUS,ASUS PRO P2540 Business Laptop (8th Generation Intel Core i7-8550U  8GB RAM  2TB M.2 Sata SSD  15.6" Flat FHD (1920 x 1080) Display  NVIDIA MX 110 Graphics  Fingerprint  Windows 10 Pro),121670,93592,23,NaN,NaN
+Lenovo,Lenovo 15 330s Grey Laptop (AMD Ryzen 5 2500U Processor  8GB DDR4 RAM  512GB 2.5 SATA SSD  15.6" Flat Full HD (1920 x 1080) Display  AMD Vega 8 Graphics  Windows 10 Home),58535,45027,23,NaN,NaN
+Lenovo,Lenovo IdeaPad 330-17ICH 81FL0001US 17.3" Notebook - 1920 x 1080 - Core i5 i5-8300H - 8 GB RAM - 1 TB HDD - Windows 10 Home 64-bit - NVIDIA GeForce GTX 1050  Intel UHD Graphics 630 - In-plane Swi,62789,52349,17,8,1
+Lenovo,Lenovo Laptop ThinkPad V330-14ARR 81B1001FUS AMD Ryzen 3 2200U (2.50 GHz) 4 GB Memory 500 GB HDD AMD Radeon Vega 3 14.0" Windows 10 Pro 64-bit,NaN,28541,0,4,500
+Toshiba,TOSHIBA Laptop Tecra PS595C-1VU01C Intel Core i7 8th Gen 8550U (1.80 GHz) 8 GB Memory 512 GB SSD Intel UHD Graphics 620 15.6" Windows 10 Pro,NaN,84883,0,8,512
+DELL,Dell XPS 13 9380 13.3" Laptop i5-8265U 8GB 256GB SSD W10H,91010,85856,6,NaN,NaN
+Lenovo,Lenovo ThinkPad T580 20L90047US 15.6" LCD Notebook - Intel Core i5 (7th Gen) i5-7200U Dual-core (2 Core) 2.50 GHz - 8 GB DDR4 SDRAM - 500 GB HDD - Windows 10 Pro 64-bit - 1920 x 1080 - In-plane Swi...,88385,73641,17,0,1920
+HP,HP Envy X360 15z Yoga Style 2-in-1 Convertible Laptop (Ryzen 7 2700U Quad-Core Processor  16GB RAM  1TB HDD + 512GB Sata SSD  15.6" Full HD (1920 x 1080) Touchscreen  Radeon Vega 10  Win 10 Home),98635,79254,20,6,512
+HP,HP 3RS07UT EliteBook 850 G5 - Core i7 8550U/1.8 GHz - Win 10 Pro 64-bit - 8 GB RAM - 256 GB SSD NVMe  TLC  Value - 15.6 inc,107602,82703,23,6,15
+Lenovo,Lenovo V145  AMD A6-9225  15in FHD TN Display  Windows 10 Home OS  8GB Memory  1TB HDD ,34614,28874,17,NaN,NaN
+Lenovo,Lenovo ThinkPad T580 20L9001SUS 15.6" Notebook i7-8650U 16GB 512GB SSD W10P,NaN,158678,0,NaN,NaN
+Lenovo,Lenovo Y50 Laptop Computer Touch 59444165 Black 4th Generation Intel Core i7-4720HQ (2.60GHz 1600MHz 6MB),102556,78987,23,NaN,NaN
+HP,HP Laptop 13-ah0001ca 8 GB Memory 256 GB SSD Intel UHD Graphics 620 13.3" Touchscreen Windows 10 Home,NaN,67290,0,8,256
