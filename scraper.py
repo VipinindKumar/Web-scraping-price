@@ -12,10 +12,16 @@ urls = ['https://www.newegg.com/global/in-en/Laptops-Notebooks/SubCategory/ID-32
 # craete urls for other pages and them to the list of pages to be parsed
 for url in urls:
 	page_soup = parse(url)
+	
+	if 'newegg' in url:
+		urls = urls + eggUrls(page_soup, url)
+	
+	if 'amazon' in url:
+		urls = urls + zonUrls(page_soup, url)
 
 	if 'flipkart' in url:
 		urls = urls + kartUrls(page_soup, url)
-		nextUrls[2] = 1
+
 
 # extract product's information and write them in csv files
 for url in urls:
