@@ -97,5 +97,7 @@ def kartUrls(page_soup, url):
 
 def kartLast(page_soup):
 	'''
-	
+	Return the last page number from the page
 	'''
+	
+	last = page_soup.find('div', {'class': '_2zg3yZ'})
