@@ -93,8 +93,12 @@ def kartUrls(page_soup, url):
 	
 	urls = []
 	# Create urls to return using url template of flipkart
-	for i in range(1, last+1):
+	for i in range(2, last+1):
+		url = 'https://www.flipkart.com/laptops/pr?sid=6bo%2Fb5g&p%5B%5D=facets.serviceability%5B%5D%3Dtrue&fm=neo%2Fmerchandising&iid=M_3580c4f9-a714-45e8-a54c-64fa60d4b35d_10.f37da198-ab3e-48f0-bc9a-12dfbbbc32c9_DesktopSite&ppt=clp&ppn=laptops-store&page=' + str(i)
 		
+		urls = urls + url
+	
+	return urls		
 
 
 def kartLast(page_soup):
