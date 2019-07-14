@@ -80,7 +80,7 @@ def flipkart(page_soup):
 		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + ',' + hdd + '\n')
 	f.close()
 
-	print('Scraped Flipkart')
+	print('Scraped Flipkart\'s page')
 
 
 def kartUrls(page_soup, url):
