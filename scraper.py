@@ -1,7 +1,7 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
-from newegg import newegg
+from newegg import newegg, eggUrls
 from amazon import amazon, zonUrls
 from flipkart import flipkart, kartUrls
 
