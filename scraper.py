@@ -9,25 +9,22 @@ urls = ['https://www.newegg.com/global/in-en/Laptops-Notebooks/SubCategory/ID-32
 'https://www.amazon.in/s?bbn=1375424031&rh=n%3A976392031%2Cn%3A976393031%2Cn%3A1375424031%2Cp_36%3A7252028031&dc&fst=as%3Aoff&rnid=7252027031', 
 'https://www.flipkart.com/laptops/pr?sid=6bo%2Fb5g&p%5B%5D=facets.serviceability%5B%5D%3Dtrue&fm=neo%2Fmerchandising&iid=M_3580c4f9-a714-45e8-a54c-64fa60d4b35d_10.f37da198-ab3e-48f0-bc9a-12dfbbbc32c9_DesktopSite&ppt=clp&ppn=laptops-store']
 
-# keeps track, if urls for next pages are created
-nextUrls = [0,0,0]
-
+# craete urls for other pages and them to the list of pages to be parsed
 for url in urls:
-	parse(url)
-	
-	# check if craeted urls for other pages, if not create them
-	if not nextUrls[2]:
+	page_soup = parse(url)
+
+	if 'flipkart' in url:
 		urls = urls + kartUrls(page_soup, url)
 		nextUrls[2] = 1
 
-	# extract information and write in csv 
+# extract product's information and write them in csv files
+for url in urls:
+	page_soup = parse(url)
+	
 	if 'newegg' in url:
-		#from newegg
 		newegg(page_soup)
 
-	if 'amazon' in url:
-		# add function call that will create urls to be appended to the list urls, function will get the last page number and create urls upto that page using predefined template for next pages
-		
+	if 'amazon' in url:		
 		amazon(page_soup)
 	
 	if 'flipkart' in url:
