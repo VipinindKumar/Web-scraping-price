@@ -44,7 +44,7 @@ for url in urls:
 for i,url in enumerate(urls):
 	page_soup = parse(url)
 	
-	print(i + 'Page')
+	print(str(i) + ' Page')
 	
 	if 'newegg' in url:
 		newegg(page_soup)
