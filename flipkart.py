@@ -1,7 +1,12 @@
 import re
 
+
 def flipkart(page_soup):
-	# create a new file in write mode
+	'''
+	It takes the Beautiful-soup of the flipkart's page, extract the details of the products listed and write them into a csv file
+	'''
+	
+	# create a new file to write data in csv
 	f = open('data/flipkart-laptops.csv', 'w')
 
 	# write a header, columns name
@@ -76,3 +81,12 @@ def flipkart(page_soup):
 	f.close()
 
 	print('Scraped Flipkart')
+
+
+def kartUrls(page_soup, url):
+	'''
+	Extract the last page number from page-soup and create urls upto that page using predefined template of the flipkart urls
+	'''
+	
+	# get the last page number
+	
