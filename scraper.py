@@ -13,13 +13,12 @@ urls = ['https://www.newegg.com/global/in-en/Laptops-Notebooks/SubCategory/ID-32
 nextUrls = [0,0,0]
 
 for url in urls:
-	# open connection to url, and download the page
-	client = urlopen(url)
-	page_html = client.read()
-	client.close()
-
-	# parse the page
-	page_soup = BeautifulSoup(page_html, 'html.parser')
+	parse(url)
+	
+	# check if craeted urls for other pages, if not create them
+	if not nextUrls[2]:
+		urls = urls + kartUrls(page_soup, url)
+		nextUrls[2] = 1
 
 	# extract information and write in csv 
 	if 'newegg' in url:
@@ -33,8 +32,20 @@ for url in urls:
 	
 	if 'flipkart' in url:
 		flipkart(page_soup)
-		
-		# check if craeted urls for other pages, if not create them
-		if not nextUrls[2]:
-			urls = urls + kartUrls(page_soup, url)
-			nextUrls[2] = 1
+
+
+
+def parse(url):
+	'''
+	Parses the url page and return a BeautifulSoup object
+	'''
+	
+	# open connection to url, and download the page
+	client = urlopen(url)
+	page_html = client.read()
+	client.close()
+
+	# parse the page
+	page_soup = BeautifulSoup(page_html, 'html.parser')
+	
+	return page_soup
