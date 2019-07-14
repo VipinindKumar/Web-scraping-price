@@ -3,6 +3,10 @@ import re
 productClass = 'sg-col-20-of-24 s-result-item sg-col-0-of-12 sg-col-28-of-32 sg-col-16-of-20 sg-col sg-col-32-of-36 sg-col-12-of-16 sg-col-24-of-28'
 
 def amazon(page_soup):
+	'''
+	It takes the Beautiful-soup of the amazon's page, extract the details of the products listed and write them into a csv file	
+	'''
+	
 	# create a new file in write mode
 	f = open('data/amazon-laptops.csv', 'w')
 
