@@ -85,8 +85,17 @@ def flipkart(page_soup):
 
 def kartUrls(page_soup, url):
 	'''
-	Extract the last page number from page-soup and create urls upto that page using predefined template of the flipkart urls
+	Extract the last page number from page_soup and create urls upto that page using predefined template of the flipkart urls
 	'''
 	
 	# get the last page number
+	last = kartLast(page_soup)
 	
+	# Create urls to return using url template of flipkart
+	
+
+
+def kartLast(page_soup):
+	'''
+	
+	'''
