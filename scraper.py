@@ -24,6 +24,8 @@ for url in urls:
 		newegg(page_soup)
 
 	if 'amazon' in url:
+		# add function call that will create urls to be appended to the list urls, function will get the last page number and create urls upto that page using predefined template for next pages
+		
 		amazon(page_soup)
 	
 	if 'flipkart' in url:
