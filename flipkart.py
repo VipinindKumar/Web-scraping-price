@@ -91,8 +91,10 @@ def kartUrls(page_soup, url):
 	# get the last page number
 	last = kartLast(page_soup)
 	
+	urls = []
 	# Create urls to return using url template of flipkart
-	
+	for i in range(1, last+1):
+		
 
 
 def kartLast(page_soup):
@@ -101,3 +103,6 @@ def kartLast(page_soup):
 	'''
 	
 	last = page_soup.find('div', {'class': '_2zg3yZ'})
+	last = last.span.text.split(' ')[-1]
+	
+	return int(last)
