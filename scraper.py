@@ -2,8 +2,8 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
 from newegg import newegg
-from amazon import amazon
-from flipkart import flipkart , kartUrls
+from amazon import amazon, zonUrls
+from flipkart import flipkart, kartUrls
 
 
 def parse(url):
@@ -41,8 +41,10 @@ for url in urls:
 
 
 # extract product's information and write them in csv files
-for url in urls:
+for i,url in enumerate(urls):
 	page_soup = parse(url)
+	
+	print(i + 'Page')
 	
 	if 'newegg' in url:
 		newegg(page_soup)

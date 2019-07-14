@@ -68,7 +68,7 @@ def amazon(page_soup):
 		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + ',' + hdd + '\n')
 	f.close()
 
-	print('Scraped Amazon')
+	print('Scraped Amazon\'s page')
 
 
 
