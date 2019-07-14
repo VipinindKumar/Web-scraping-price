@@ -12,7 +12,10 @@ def newegg(page_soup):
 
 	for cont in conts:
 		# getting brand name from the title of img tag
-		brand = cont.find('div', 'item-info').div.a.img['title']
+		try:
+			brand = cont.find('div', 'item-info').div.a.img['title']
+		except:
+			brand = 'NaN'
 		
 		# to filter products pop up shown in recently viewed items at the end of the page
 		# print(brand)
