@@ -24,7 +24,7 @@ def flipkart(page_soup):
 			title = cont.select_one('div > div > div > a > div:nth-of-type(2) > div > div').get_text(strip=True)
 		
 		# if product is refurbished/renewed
-		if ('refurbished' in title) or ('renewed' in title):
+		if ('refurbished' in title.lower()) or ('renewed' in title.lower()):
 			refurb = 1
 		else:
 			refurb = 0
