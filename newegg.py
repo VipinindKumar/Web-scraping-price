@@ -5,7 +5,7 @@ def newegg(page_soup):
 	f =  open('data/newegg-laptops.csv', 'w')
 
 	# write a header, columns name
-	f.write('Brand, Name, Price-was, Current-Price, Discount(%), RAM(GB), Storage(GB/TB)\n')
+	f.write('Brand, Name, Price-was, Current-Price, Discount(%), RAM(GB), Storage(GB/TB), Refurbished(0/1)\n')
 
 	# grabs each item-container
 	conts = page_soup.findAll('div', {'class': 'item-container'})
@@ -24,6 +24,12 @@ def newegg(page_soup):
 
 		# getting title/name of the product
 		title = cont.findAll('a', {'class': 'item-title'})[0].text
+		
+		# if product is refurbished/renewed
+		if ('refurbished' in title.lower()) or ('renewed' in title.lower()):
+			refurb = 1
+		else:
+			refurb = 0
 		
 		# process title to extract ram, storage
 		features = title.replace(' ', '')
@@ -59,7 +65,7 @@ def newegg(page_soup):
 		
 		# write the row into csv file
 		f.write(brand + ',' + title.replace(',', ' ')
-		+ ',' + pw + ',' + pc + ',' + dc + ',' + ram + ',' + hdd + '\n')
+		+ ',' + pw + ',' + pc + ',' + dc + ',' + ram + ',' + hdd + ',' + refurb + '\n')
 
 	f.close()
 
