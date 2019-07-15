@@ -10,7 +10,7 @@ def flipkart(page_soup):
 	f = open('data/flipkart-laptops.csv', 'w')
 
 	# write a header, columns name
-	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings, RAM(GB), Storage(GB/TB)\n')
+	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings, RAM(GB), Storage(GB/TB), Refurbished(0/1)\n')
 
 	# grabs each item-container
 	conts = page_soup.findAll('div', {'class': 'bhgxx2 col-12-12'})
@@ -22,6 +22,13 @@ def flipkart(page_soup):
 			title = cont.select_one('div > div > div > a > div:nth-of-type(3) > div > div').get_text(strip=True)
 		except:
 			title = cont.select_one('div > div > div > a > div:nth-of-type(2) > div > div').get_text(strip=True)
+		
+		# if product is refurbished/renewed
+		if ('refurbished' in title) or ('renewed' in title):
+			refurb = 1
+		else:
+			refurb = 0
+		
 		
 		# retrieve the brand name of the product
 		brand = title.split(' ')[0]
@@ -77,7 +84,7 @@ def flipkart(page_soup):
 		 	hdd = 'NaN'
 
 		# write the variables in csv file
-		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + ',' + hdd + '\n')
+		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + ',' + hdd + ',' + refurb + '\n')
 	f.close()
 
 	print('Scraped Flipkart\'s page')
