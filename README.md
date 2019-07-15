@@ -17,8 +17,8 @@
 * ~put urlopen in try/except or while loop~
 * add link to the product in csv
 
-* use next page as a url too, to extract information
+* ~use next page as a url too, to extract information~
 * Report the best options from sorted data
 * Automate to run everyday/periodically
 * Add Refurbished and renewed labels
-* get the last page number from the page and create list of urls to scrape
+* ~get the last page number from the page and create list of urls to scrape~
