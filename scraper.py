@@ -31,12 +31,15 @@ for url in urls:
 	page_soup = parse(url)
 	
 	if 'newegg' in url:
+		print('Creating URLs for newegg')
 		urls = urls + eggUrls(page_soup, url)
 	
 	if 'amazon' in url:
+		print('Creating URLs for amazon')
 		urls = urls + zonUrls(page_soup, url)
 
 	if 'flipkart' in url:
+		print('Creating URLs for flipkart')
 		urls = urls + kartUrls(page_soup, url)
 
 

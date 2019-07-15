@@ -25,9 +25,9 @@ def flipkart(page_soup):
 		
 		# if product is refurbished/renewed
 		if ('refurbished' in title.lower()) or ('renewed' in title.lower()):
-			refurb = 1
+			refurb = '1'
 		else:
-			refurb = 0
+			refurb = '0'
 		
 		
 		# retrieve the brand name of the product
