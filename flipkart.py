@@ -73,22 +73,17 @@ def flipkart(page_soup):
 		
 		# ram
 		try:
-		 	ram = cont.select_one('div > div > div > a > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(3) > ul > li:nth-of-type(2)').get_text()
-		 	ram = ram.split(' ')[0]
+			features = re.search('\((\d+) GB/(\d+)\s.B', title)
+		 	ram = features.group(1)
+		 	hdd = features.group(2)
 		 	
 		except:
 		 	ram = 'NaN'
-		
-		# Storage
-		try:
-		 	hdd = cont.select_one('div > div > div > a > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(3) > ul > li:nth-of-type(4)').get_text()
-		 	hdd = hdd.split(' ')[0]
-		 	
-		except:
 		 	hdd = 'NaN'
-
+		
+		
 		# write the variables in csv file
-		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + ',' + hdd + ',' + refurb + ',' + link + '\n')
+		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + ',' + hdd + ',' + refurb + ',' + link + '\n')
 	f.close()
 
 	print('Scraped Flipkart\'s page')
