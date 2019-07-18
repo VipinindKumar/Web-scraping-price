@@ -74,12 +74,12 @@ def flipkart(page_soup):
 		# ram
 		try:
 			features = re.search('\((\d+) GB/(\d+)\s.B', title)
-		 	ram = features.group(1)
-		 	hdd = features.group(2)
+			ram = features.group(1)
+			hdd = features.group(2)
 		 	
 		except:
-		 	ram = 'NaN'
-		 	hdd = 'NaN'
+			ram = 'NaN'
+			hdd = 'NaN'
 		
 		
 		# write the variables in csv file
