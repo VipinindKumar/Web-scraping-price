@@ -10,7 +10,7 @@ def flipkart(page_soup):
 	f = open('data/flipkart-laptops.csv', 'w')
 
 	# write a header, columns name
-	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings, RAM(GB), Storage(GB/TB), Refurbished(0/1)\n')
+	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings, RAM(GB), Storage(GB/TB), Refurbished(0/1), URL\n')
 
 	# grabs each item-container
 	conts = page_soup.findAll('div', {'class': 'bhgxx2 col-12-12'})
@@ -28,6 +28,10 @@ def flipkart(page_soup):
 			refurb = '1'
 		else:
 			refurb = '0'
+		
+		# Link of the product
+		link = cont.div.div.div.a['href']
+		link = 'https://www.flipkart.com/' + link
 		
 		
 		# retrieve the brand name of the product
@@ -84,7 +88,7 @@ def flipkart(page_soup):
 		 	hdd = 'NaN'
 
 		# write the variables in csv file
-		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + ',' + hdd + ',' + refurb + '\n')
+		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + ',' + hdd + ',' + refurb + ',' + link + '\n')
 	f.close()
 
 	print('Scraped Flipkart\'s page')
