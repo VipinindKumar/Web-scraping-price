@@ -15,10 +15,10 @@
 * ~Write script for Flipkart~
 * Find other good sites available to buy new/old laptops
 * ~put urlopen in try/except or while loop~
-* add link to the product in csv
+* ~add link to the product in csv~
 
 * ~use next page as a url too, to extract information~
 * Report the best options from sorted data
 * Automate to run everyday/periodically
-* Add Refurbished and renewed labels
+* ~Add Refurbished and renewed labels~
 * ~get the last page number from the page and create list of urls to scrape~
