@@ -53,12 +53,12 @@ for i,url in enumerate(urls):
 	# if not (i%10 == 0):
 	# 	continue
 	
-	if 'newegg' in url:
-		newegg(page_soup)
+	# if 'newegg' in url:
+	# 	newegg(page_soup)
 
 	if 'amazon' in url:		
 		amazon(page_soup)
 	
-	if 'flipkart' in url:
-		flipkart(page_soup)
+	# if 'flipkart' in url:
+	# 	flipkart(page_soup)
 

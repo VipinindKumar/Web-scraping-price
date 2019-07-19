@@ -63,6 +63,7 @@ def flipkart(page_soup):
 			pc = price.group(1)	
 								
 			# discount in ruppee and percent
+			dc = 'NaN'
 			dcp = price.group(3)
 			
 		except:

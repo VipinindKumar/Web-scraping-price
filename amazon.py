@@ -11,7 +11,7 @@ def amazon(page_soup):
 	f = open('data/amazon-laptops.csv', 'w')
 
 	# write a header, columns name
-	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings, RAM(GB), Storage(GB/TB), Refurbished(0/1)\n')
+	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings, RAM(GB), Storage(GB/TB), Refurbished(0/1), URL\n')
 
 	# grabs each item-container
 	conts = page_soup.findAll('div', {'class': productClass})
@@ -25,6 +25,10 @@ def amazon(page_soup):
 			refurb = '1'
 		else:
 			refurb = '0'
+		
+		# link of the product
+		link = cont.select_one('div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > div > div > h2').a['href']
+		link = 'https://www.amazon.in' + link
 		
 		# process title to extract ram, storage
 		try:
@@ -75,7 +79,7 @@ def amazon(page_soup):
 		
 		
 		# write the variables in csv file
-		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + ',' + hdd + ',' + refurb + '\n')
+		f.write(brand + ',' + title.replace(',', ' ') + ',' + pw + ',' + pc + ',' + dc + ',' + dcp + ',' + rating + ',' + num_rating + ',' + ram + ',' + hdd + ',' + refurb + ',' + link + '\n')
 	f.close()
 
 	print('Scraped Amazon\'s page')
