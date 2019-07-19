@@ -1,9 +1,9 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-url = 'https://www.amazon.in/s?bbn=1375424031&rh=n%3A976392031%2Cn%3A976393031%2Cn%3A1375424031%2Cp_36%3A7252028031&dc&fst=as%3Aoff&rnid=7252027031'
+url = 'https://www.newegg.com/global/in-en/Laptops-Notebooks/SubCategory/ID-32?Tid=1297918'
 client = urlopen(url)
 page_html = client.read()
 client.close()
 page_soup = BeautifulSoup(page_html, 'html.parser')
-conts = page_soup.findAll('div', {'class': productClass})
+conts = page_soup.findAll('div', {'class': 'item-container'})
 cont = conts[0]
