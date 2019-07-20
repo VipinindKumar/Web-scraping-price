@@ -5,7 +5,7 @@ def newegg(page_soup):
 	f =  open('data/newegg-laptops.csv', 'w')
 
 	# write a header, columns name
-	f.write('Brand, Name, Price-was, Current-Price, Discount(%), RAM(GB), Storage(GB/TB), Refurbished(0/1), URL\n')
+	f.write('Brand,Name,Price-was,Current-Price,Discount(%),RAM(GB),Storage(GB/TB),Refurbished(0/1),URL\n')
 
 	# grabs each item-container
 	conts = page_soup.findAll('div', {'class': 'item-container'})

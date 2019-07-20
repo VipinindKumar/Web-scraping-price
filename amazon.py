@@ -11,7 +11,7 @@ def amazon(page_soup):
 	f = open('data/amazon-laptops.csv', 'w')
 
 	# write a header, columns name
-	f.write('Brand, Name, Price-was, Current-Price, Discount(₹), Discount(%), Rating(Out of 5), Number-of-ratings, RAM(GB), Storage(GB/TB), Refurbished(0/1), URL\n')
+	f.write('Brand,Name,Price-was,Current-Price,Discount(₹),Discount(%),Rating(Out of 5),Number-of-ratings,RAM(GB),Storage(GB/TB),Refurbished(0/1),URL\n')
 
 	# grabs each item-container
 	conts = page_soup.findAll('div', {'class': productClass})
