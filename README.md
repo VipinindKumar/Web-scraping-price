@@ -22,3 +22,6 @@
 * Automate to run everyday/periodically
 * ~Add Refurbished and renewed labels~
 * ~get the last page number from the page and create list of urls to scrape~
+* ~stop newegg after certain page number~
+* ~stop flipkart after certain page number~
+* robot check problem
