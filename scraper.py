@@ -56,8 +56,8 @@ for i,url in enumerate(urls):
 	print(str(i+1) + ' Page')
 	
 	# adding to test the program quickly
-	if not (i%10 == 0):
-		continue
+	# if not (i%10 == 0):
+	# 	continue
 	
 	if 'newegg' in url:
 		newegg(page_soup)
