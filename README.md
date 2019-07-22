@@ -7,6 +7,11 @@
 * flipkart.py
 * newegg.py
 
+### Outputs:
+* amazon-laptops.csv
+* flipkart-laptops.csv
+* newegg-laptops.csv
+
 ### ToDo:
 * ~Factorise the code to use in multiple sites and urls~
 * ~Find more sites to scrap the data~
