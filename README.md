@@ -2,6 +2,10 @@
 ### Running the program:
 `python3 scraper.py`
 
+### Dependencies:
+* amazon.py
+* flipkart.py
+* newegg.py
 
 ### ToDo:
 * ~Factorise the code to use in multiple sites and urls~
