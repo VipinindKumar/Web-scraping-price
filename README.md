@@ -1,4 +1,7 @@
 # Web-scraping-price
+### Running the program:
+`python3 scraper.py`
+
 
 ### ToDo:
 * ~Factorise the code to use in multiple sites and urls~
